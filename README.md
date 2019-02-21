@@ -12,3 +12,6 @@ twitter_credentials['access_token'] = 'DIGITE AQUI SEU ACCESS TOKEN'<br>
 twitter_credentials['access_token_secret'] = 'DIGITE AQUI SEU ACCESS TOKEN SECRET'<br>
 with open('credenciais_twitter.json', 'w') as secret_info:<br>
   json.dump(twitter_credentials, secret_info, indent=4, sort_keys=True)<br></code></pre>
+  
+Para iniciar o Notebook com data rate expandido:
+<code>jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000000</code>
